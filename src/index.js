@@ -1,5 +1,4 @@
 import React from "react";
-import "assets/css/App.css";
 import theme from "theme/theme";
 import ReactDOM from "react-dom";
 import AdminLayout from "layouts/admin";

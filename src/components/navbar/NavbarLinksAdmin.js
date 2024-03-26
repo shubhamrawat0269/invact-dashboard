@@ -24,7 +24,6 @@ import navImage from "assets/img/layout/Navbar.png";
 import { MdNotificationsNone, MdInfoOutline } from "react-icons/md";
 import { FaEthereum } from "react-icons/fa";
 import routes from "routes.js";
-import { ThemeEditor } from "./ThemeEditor";
 export default function HeaderLinks(props) {
   const { secondary } = props;
   // Chakra Color Mode
@@ -46,11 +45,8 @@ export default function HeaderLinks(props) {
       w={{ sm: "100%", md: "auto" }}
       alignItems="center"
       flexDirection="row"
-      bg={menuBg}
       flexWrap={secondary ? { base: "wrap", md: "nowrap" } : "unset"}
       p="10px"
-      borderRadius="30px"
-      boxShadow={shadow}
     >
       <SearchBar
         mb={secondary ? { base: "10px", md: "unset" } : "unset"}
@@ -219,8 +215,6 @@ export default function HeaderLinks(props) {
         </MenuList>
       </Menu>
 
-      <ThemeEditor navbarIcon={navbarIcon} />
-
       <Menu>
         <MenuButton p="0px">
           <Avatar
@@ -253,7 +247,7 @@ export default function HeaderLinks(props) {
               fontWeight="700"
               color={textColor}
             >
-              👋&nbsp; Hey, Adela
+              Hey, Shubham
             </Text>
           </Flex>
           <Flex flexDirection="column" p="10px">
